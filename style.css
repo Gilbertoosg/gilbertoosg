@@ -1,0 +1,148 @@
+:root {
+    --fondo: #9cdbff;
+    --fondoNAV: #5e9dc1;
+    --fondoHeader: #1046ea;
+    --anchoPag: 960px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+
+body {
+    background: var(--fondo);
+}
+
+header {
+    background: var(--fondoHeader);
+    width: 100%;
+    height: 150px;
+    padding-top: 50px;
+}
+
+.con-encabezado {
+    width: var(--anchoPag);
+    height: 150px; 
+    background: #0d0b90;  
+    margin: auto;
+    border-radius: 30px 30px 0px 0px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.con-encabezado img {
+    width: 200px;
+    height: 140px; 
+    margin-top: 10px;   
+}
+
+.con-encabezado p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #fff;  
+}
+
+.con-nav {
+    background: var(--fondoNAV);
+    width: var(--anchoPag);
+    height: 35px;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.con-nav a {
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    color: #fff;
+    line-height: 35px;
+}
+
+.con-nav a:hover {
+    transform: scale(1.7);
+    transition: all 0.5s ease;
+    background: #0d0b90;
+    color: #ffff;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#slider img {
+    display: none;
+    width: 100%;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px; 
+}
+
+.circulo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.circulo:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.mapa {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--fondoHeader);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: var(--anchoPag);
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
